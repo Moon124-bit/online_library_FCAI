@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library - Book Catalogue</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Library</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Catalogue</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="login.html">Login</a>
+            <a href="my-books.html">My Borrowed Books</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Book Catalogue</h2>
+        <p>Browse the books available in the online library.</p>
+
+        <section>
+            <h3>Search and Filter Books</h3>
+
+            <form action="books.html" method="get">
+
+                <label for="search">Search by title or author:</label>
+                <input
+                    type="search"
+                    id="search"
+                    name="search"
+                    placeholder="Enter a book title or author"
+                    size="23"
+                >
+
+                <br><br>
+
+                <label for="category">Filter by category:</label>
+
+                <select id="category" name="category">
+                    <option value="">All Categories</option>
+                    <option value="programming">Programming</option>
+                    <option value="science">Science</option>
+                    <option value="literature">Literature</option>
+                    <option value="history">History</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Search</button>
+                <button type="reset">Clear</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h3>Books</h3>
+
+            <article>
+                <h4>Introduction to Programming</h4>
+
+                <p><strong>Author:</strong> John Smith</p>
+                <p><strong>Category:</strong> Programming</p>
+                <p>
+                    A beginner-friendly introduction to programming concepts.
+                </p>
+
+                <p><strong>Status:</strong> Available</p>
+
+                <a href="book-details.html">View Details</a>
+            </article>
+
+            <hr>
+
+            <article>
+                <h4>Learning Python</h4>
+
+                <p><strong>Author:</strong> Mark Lutz</p>
+                <p><strong>Category:</strong> Programming</p>
+                <p>
+                    An introduction to the Python programming language.
+                </p>
+
+                <p><strong>Status:</strong> Borrowed</p>
+
+                <a href="book-details.html">View Details</a>
+
+                <button type="button" disabled>
+                    Currently Unavailable
+                </button>
+            </article>
+
+            <hr>
+
+            <article>
+                <h4>A Brief History of Time</h4>
+
+                <p><strong>Author:</strong> Stephen Hawking</p>
+                <p><strong>Category:</strong> Science</p>
+                <p>
+                    A general introduction to questions about the universe.
+                </p>
+
+                <p><strong>Status:</strong> Available</p>
+
+                <a href="book-details.html">View Details</a>
+            </article>
+
+        </section>
+
+        <section>
+            <h3>No Results</h3>
+
+            <p>
+                No books match your search.
+                Try another title, author, or category.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Online Library - Book Catalogue</p>
+    </footer>
+
+</body>
+</html>
