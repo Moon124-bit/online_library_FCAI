@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Add or Edit Books in Online Library">
+    <title>Add / Edit Book - Online Library</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Library</h1>
+        <p>Administrator Dashboard</p>
+
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="admin-books.html">Admin Dashboard</a>
+            <a href="books.html">Book Catalogue</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Add New Book</h2>
+            <p>Enter the book information to add it to the library.</p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Book Information</legend>
+
+                    <div>
+                        <label for="title">Book Title:</label>
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            placeholder="Enter book title"
+                            required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="author">Author:</label>
+                        <input
+                            type="text"
+                            id="author"
+                            name="author"
+                            placeholder="Enter author name"
+                            required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select Category</option>
+                            <option value="programming">Programming</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="self-development">Self Development</option>
+                            <option value="finance">Finance</option>
+                            <option value="fiction">Fiction</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="description">Book Description:</label>
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="5"
+                            cols="40"
+                            placeholder="Enter book description"
+                            required></textarea>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="availability">Availability Status:</label>
+                        <select id="availability" name="availability" required>
+                            <option value="">Select Status</option>
+                            <option value="available">Available</option>
+                            <option value="borrowed">Borrowed</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Save Book</button>
+                <button type="reset">Clear Form</button>
+
+                <a href="admin-books.html">Cancel</a>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Online Library. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Library Admin Dashboard">
+    <title>Admin Dashboard - Online Library</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Online Library</h1>
+        <p>Administrator Dashboard</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin-books.html">Admin Dashboard</a>
+            <a href="books.html">Book Catalogue</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Book Management</h2>
+            <p>Manage the books available in the online library.</p>
+
+            <a href="book-form.html">Add New Book</a>
+        </section>
+
+        <section>
+            <h2>Books List</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Availability</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Clean Code</td>
+                        <td>Robert C. Martin</td>
+                        <td>Programming</td>
+                        <td>Available</td>
+                        <td>
+                            <a href="book-form.html">Edit</a>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Introduction to Algorithms</td>
+                        <td>Thomas H. Cormen</td>
+                        <td>Computer Science</td>
+                        <td>Borrowed</td>
+                        <td>
+                            <a href="book-form.html">Edit</a>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td>Atomic Habits</td>
+                        <td>James Clear</td>
+                        <td>Self Development</td>
+                        <td>Available</td>
+                        <td>
+                            <a href="book-form.html">Edit</a>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>104</td>
+                        <td>Rich Dad Poor Dad</td>
+                        <td>Robert Kiyosaki</td>
+                        <td>Finance</td>
+                        <td>Borrowed</td>
+                        <td>
+                            <a href="book-form.html">Edit</a>
+                            <button type="button">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Online Library. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
