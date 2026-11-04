@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+}
+ .box_1 h1 {
+    color:#570102;
+}
+ .box_1 {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 25px;
+    background-color: #FFF2E2;
+    border-bottom: 1px solid #E6D3C0;
+    justify-content: space-between;
+
+}
+/* Logo */
+ .box_1 > img:first-child {
+    width: 78px !important;
+    height: auto !important;
+    flex-shrink: 0;
+    margin-right: 28px;
+}
+/* Title and subtitle */
+ .box_1 > div {
+    flex-shrink: 0;
+    margin-right: auto;
+}
+ .box_1 p {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #80515A;
+    margin: 0;
+}
+/* Navigation */
+ .box_1 header {
+    margin-left: auto;
+}
+
+ .box_1 nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    white-space: nowrap;
+}
+
+ .box_1 nav a {
+    font-family: "Lora", serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #641B2B;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+ .box_1 nav a:hover {
+    color: #A66A73;
+}
+/* Search icon */
+ .box_1 > img:nth-of-type(2) {
+    width: 28px !important;
+    height: auto !important;
+    margin-left: 350px;
+    margin-right: 15px;
+}
+/* Shopping cart icon */
+ .box_1 > img:nth-of-type(3) {
+    width: 28px !important;
+    height: auto !important;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+
+/* Main area */
+main {
+    width: 900px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Main heading */
+main h2 {
+    margin-bottom: 35px;
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    text-align: center;
+    color: #6B1825;
+}
+
+/* All book boxes */
+.boxes {
+    position: relative;
+    width: 100%;
+}
+
+.boxes img {
+    display: block;
+    width: 100%;
+    height: 630px;
+    object-fit: cover;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Article and section boxes */
+.boxes article,
+.boxes section {
+    width:  calc(50% - 13px);
+    height: 300px;
+    padding: 25px;
+    background-color: #FFF2E2;
+    border: 1px solid #4A101A;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Box titles */
+.boxes h3 {
+    margin-top: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    color: #6B1825;
+}
+
+/* Book information */
+.boxes p {
+    margin: 10px 0;
+    font-family: "Lora", serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Borrow Book button */
+.boxes article button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #6B1825;
+    color: #F5EBDD;
+    border: none;
+    border-radius: 5px;
+    font-family: "Lora", serif;
+    font-size: 15px;
+}
+
+.boxes article button:hover {
+    background-color: #4A101A;
+}
+
+/* Unavailable button */
+.boxes section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #CFC5B5;
+    color: #6B6B6B;
+    border: 1px solid #8E9162;
+    border-radius: 5px;
+    font-family: "Lora", serif;
+    font-size: 14px;
+    cursor: not-allowed;
+}
+
+/* Back to Catalogue */
+.back-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #F5EBDD;
+    color: #4A101A;
+    border-radius: 5px;
+    font-family: "Lora", serif;
+    text-decoration: none;
+}
+
+
+
+
+/* ===== Footer ===== */
+footer {
+    padding: 20px;
+    background-color: #F5EBDD;
+    color: #4A101A;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-family: "Lora", serif;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* Index.CSS */
+

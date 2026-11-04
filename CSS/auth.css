@@ -1,0 +1,125 @@
+/* styles for signup.html and login.html */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+}
+ .box_1 h1 {
+    color:#570102;
+}
+ .box_1 {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 25px;
+    background-color: #FFF2E2;
+    border-bottom: 1px solid #E6D3C0;
+    justify-content: space-between;
+
+}
+/* Logo */
+ .box_1 > img:first-child {
+    width: 78px !important;
+    height: auto !important;
+    flex-shrink: 0;
+    margin-right: 28px;
+}
+/* Title and subtitle */
+ .box_1 > div {
+    flex-shrink: 0;
+    margin-right: auto;
+}
+ .box_1 p {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #80515A;
+    margin: 0;
+}
+
+.box_2 {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("../images/bookpic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.box_2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(245, 235, 221, 0.55);
+}
+
+.box_2 main {
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    background-color: #FFF2E2;
+    max-width: 400px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    border: 1px solid #6B1825;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-top: 8px;
+}
+
+input[type="radio"] + label {
+  display: inline;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #6B1825;
+  color: #F5EBDD;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4A101A;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #F5EBDD;
+  background-color: #4A101A;
+
+}

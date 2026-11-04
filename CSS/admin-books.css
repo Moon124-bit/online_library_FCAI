@@ -1,0 +1,190 @@
+
+/* ===== GENERAL ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5EBDD;
+    font-family: "Lora", serif;
+    color: #4A101A;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #FFF2E2;
+    padding: 25px 40px;
+    border-bottom: 1px solid #E6D3C0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    color: #6B1825;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    color: #80515A;
+    margin: 10px 0 20px;
+}
+
+/* ===== NAVIGATION ===== */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: #6B1825;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    color: #8E9162;
+}
+
+/* ===== MAIN ===== */
+
+main {
+    max-width: 1100px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* ===== SECTIONS ===== */
+
+main section {
+    background-color: #FFF2E2;
+    border: 1px solid #D8C8B8;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+main section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #6B1825;
+    margin-top: 0;
+}
+
+main section p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* ===== ADD NEW BOOK LINK ===== */
+
+main section:first-child a {
+    display: inline-block;
+    background-color: #6B1825;
+    color: #F5EBDD;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+main section:first-child a:hover {
+    background-color: #4A101A;
+}
+
+/* ===== TABLE ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    font-size: 14px;
+}
+
+th {
+    background-color: #6B1825;
+    color: #F5EBDD;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #6B1825;
+}
+
+td {
+    padding: 14px;
+    border: 1px solid #D8C8B8;
+    color: #4A101A;
+}
+
+tbody tr:hover {
+    background-color: #F5EBDD;
+}
+
+/* ===== ACTIONS ===== */
+
+td a {
+    display: inline-block;
+    color: #6B1825;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+td a:hover {
+    color: #8E9162;
+}
+
+td button {
+    background-color: #6B1825;
+    color: #F5EBDD;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-family: "Lora", serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+td button:hover {
+    background-color: #4A101A;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #6B1825;
+    color: #F5EBDD;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    main section {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}

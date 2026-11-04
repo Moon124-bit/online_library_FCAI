@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Borrowed Books — Online Library</title>
+  <link rel="stylesheet" href="css/my-books.css">
+</head>
+<body>
+
+  <header class="site-header">
+        <div class="box_1">
+            <img src="images/logo.jpeg" alt="Logo Image" style="width:7%; height:auto;">
+            <div>
+                <h1>PAPER  ROOM  /  Online library</h1>  
+                <p>Your next favorite book is waiting</p>
+    </div>
+
+  </header>
+
+
+<div style="background-color:#4A101A;">
+  <main class="container" >
+
+    <section class="page-header" style="color:#F5EBDD;">
+      <h1>My Borrowed Books</h1>
+      <p>Here you can view all the books you have borrowed and return them when you're done.</p>
+    </section>
+
+    <section class="borrowed-list" aria-labelledby="borrowed-list-title">
+      <h2 id="borrowed-list-title">Currently Borrowed</h2>
+
+      <table class="books-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clean Code</td>
+            <td>Robert C. Martin</td>
+            <td><span class="badge badge-borrowed">Borrowed</span></td>
+            <td>
+              <button type="button" class="btn btn-danger">Return Book</button>
+            </td>
+          </tr>
+          <tr>
+            <td>The Pragmatic Programmer</td>
+            <td>Andrew Hunt</td>
+            <td><span class="badge badge-borrowed">Borrowed</span></td>
+            <td>
+              <button type="button" class="btn btn-danger">Return Book</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Introduction to Algorithms</td>
+            <td>Thomas H. Cormen</td>
+            <td><span class="badge badge-borrowed">Borrowed</span></td>
+            <td>
+              <button type="button" class="btn btn-danger">Return Book</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="borrowed-list after-return-example" aria-labelledby="after-return-title">
+      <h2 id="after-return-title">Example: After Returning a Book</h2>
+      <p class="hint">This is how the list looks after a book has been returned.</p>
+
+      <table class="books-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clean Code</td>
+            <td>Robert C. Martin</td>
+            <td><span class="badge badge-returned">Returned</span></td>
+            <td>
+              <a href="books.html" class="btn btn-primary">Borrow Again</a>
+            </td>
+          </tr>
+          <tr>
+            <td>The Pragmatic Programmer</td>
+            <td>Andrew Hunt</td>
+            <td><span class="badge badge-borrowed">Borrowed</span></td>
+            <td>
+              <button type="button" class="btn btn-danger">Return Book</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="empty-state" aria-labelledby="empty-title">
+      <h2 id="empty-title">No Borrowed Books Yet</h2>
+      <p>You haven't borrowed any books yet. Start exploring the catalogue!</p>
+      <a href="books.html" class="btn btn-primary">Browse Catalogue</a>
+    </section>
+
+  </main></div>
+
+
+   <div class="box_4">
+        <h2>About PAPER ROOM</h2>
+        <li><p>PAPER ROOM is an online library that offers a wide range of books for readers of all ages and interests. Our mission is to provide easy access to knowledge and entertainment through our extensive collection of books.</p></li>
+        <p> PAPER / ROOM. All Rights Reserved 2026 &copy;.</p>
+    </div>
+
+</body>
+</html>

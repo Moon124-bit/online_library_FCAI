@@ -1,0 +1,258 @@
+
+/* ===== MAIN CONTENT ===== */
+
+main.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* ===== PAGE HEADER ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+}
+ .box_1 h1 {
+    color:#570102;
+}
+ .box_1 {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px 25px;
+    background-color: #FFF2E2;
+    border-bottom: 1px solid #E6D3C0;
+    justify-content: space-between;
+
+}
+/* Logo */
+ .box_1 > img:first-child {
+    width: 78px !important;
+    height: auto !important;
+    flex-shrink: 0;
+    margin-right: 28px;
+}
+/* Title and subtitle */
+ .box_1 > div {
+    flex-shrink: 0;
+    margin-right: auto;
+}
+ .box_1 p {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #80515A;
+    margin: 0;
+}
+/* Navigation */
+ .box_1 header {
+    margin-left: auto;
+}
+
+ .box_1 nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    white-space: nowrap;
+}
+
+ .box_1 nav a {
+    font-family: "Lora", serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #641B2B;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+ .box_1 nav a:hover {
+    color: #A66A73;
+}
+/* Search icon */
+ .box_1 > img:nth-of-type(2) {
+    width: 28px !important;
+    height: auto !important;
+    margin-left: 350px;
+    margin-right: 15px;
+}
+/* Shopping cart icon */
+ .box_1 > img:nth-of-type(3) {
+    width: 28px !important;
+    height: auto !important;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* ===== BORROWED BOOKS SECTIONS ===== */
+
+.borrowed-list {
+    background-color: #FFF2E2;
+    border: 1px solid #6B1825;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 35px;
+}
+
+.borrowed-list h2,
+.empty-state h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #6B1825;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* ===== TABLE ===== */
+
+.books-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Lora", serif;
+    font-size: 15px;
+}
+
+.books-table th {
+    background-color: #6B1825;
+    color: #F5EBDD;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.books-table td {
+    padding: 15px;
+    border-bottom: 1px solid #D8C8B8;
+    color: #4A101A;
+}
+
+.books-table tbody tr:hover {
+    background-color: #F5EBDD;
+}
+
+/* ===== STATUS BADGES ===== */
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.badge-borrowed {
+    background-color: #F2D7A5;
+    color: #6B1825;
+}
+
+.badge-returned {
+    background-color: #DDE2C5;
+    color: #535B32;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Lora", serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-danger {
+    background-color: #6B1825;
+    color: #F5EBDD;
+}
+
+.btn-danger:hover {
+    background-color: #4A101A;
+}
+
+.btn-primary {
+    background-color: #8E9162;
+    color: #FFF2E2;
+}
+
+.btn-primary:hover {
+    background-color: #6F7348;
+}
+
+/* ===== AFTER RETURN EXAMPLE ===== */
+
+.hint {
+    font-family: "Lora", serif;
+    font-size: 14px;
+    color: #8E9162;
+    margin-bottom: 20px;
+}
+
+/* ===== EMPTY STATE ===== */
+
+.empty-state {
+    background-color: #FFF2E2;
+    border: 1px solid #6B1825;
+    border-radius: 10px;
+    padding: 40px 25px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.empty-state p {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    color: #4A101A;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    main.container {
+        padding: 25px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .borrowed-list {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    .books-table {
+        min-width: 600px;
+    }
+
+    .empty-state {
+        padding: 25px 15px;
+    }
+}
+
+ .box_4 {
+    padding: 40px;
+    background-color:#F5EBDD;
+    color: #4A101A;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box_4 h2 {
+    font-size: 30px;
+    margin: 0;
+}
